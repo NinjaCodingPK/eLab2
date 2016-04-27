@@ -12,6 +12,10 @@ public class Model {
     private double mean;
     private int rounded;
 
+    public Model() {
+
+    }
+
     public Model(int _value1, int _value2, int _value3, int _value4) {
         value1 = _value1;
         value2 = _value2;

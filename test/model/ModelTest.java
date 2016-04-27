@@ -28,8 +28,21 @@ public class ModelTest {
         instance.round();
         int result = instance.getRounded();
         int expResult = 4;
-        assertEquals("Rounded value: ", expResult, result);
+        assertEquals("Round value to bigger one: ", expResult, result);
 
+        instance.setValues(1, 2, 3, 4);
+        instance.calculateMean(); //mean = 2.5
+        instance.round();
+        result = instance.getRounded();
+        expResult = 3;
+        assertEquals("Round value to bigger one: ", expResult, result);
+
+        instance.setValues(1, 2, 3, 3);
+        instance.calculateMean(); //mean = 2.25
+        instance.round();
+        result = instance.getRounded();
+        expResult = 2;
+        assertEquals("Round value to smaller one: ", expResult, result);
     }
 
 }

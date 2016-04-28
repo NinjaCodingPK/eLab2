@@ -16,11 +16,11 @@ public class Model {
 
     }
 
-    public Model(int _value1, int _value2, int _value3, int _value4) {
-        value1 = _value1;
-        value2 = _value2;
-        value3 = _value3;
-        value4 = _value4;
+    public Model(int value1, int value2, int value3, int value4) {
+        this.value1 = value1;
+        this.value2 = value2;
+        this.value3 = value3;
+        this.value4 = value4;
     }
 
     /**
@@ -45,11 +45,11 @@ public class Model {
      * @param _value3 third integer value
      * @param _value4 fours integer value
      */
-    public void setValues(int _value1, int _value2, int _value3, int _value4) {
-        value1 = _value1;
-        value2 = _value2;
-        value3 = _value3;
-        value4 = _value4;
+    public void setValues(int value1, int value2, int value3, int value4) {
+        this.value1 = value1;
+        this.value2 = value2;
+        this.value3 = value3;
+        this.value4 = value4;
     }
 
     public void setValue1(int value1) {
